@@ -14,7 +14,8 @@ require 'sinatra/contrib'
 
 get '/' do
   # This will be your default route
-  'change me!'
+  'Yellow World :D'
+  'Aouled'
 end
 
 # Try adding some other routes
