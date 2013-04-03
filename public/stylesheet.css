@@ -1,0 +1,12 @@
+.centre {
+  margin-left: 400px;
+}
+
+#profile-image {
+  float: left;
+  padding-right: 20px;
+}
+
+#profile-info {
+  padding-top: 20px;
+}
