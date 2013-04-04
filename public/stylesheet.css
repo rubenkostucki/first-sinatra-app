@@ -1,12 +1,14 @@
 .centre {
   margin-left: 400px;
+  overflow: hidden;
 }
 
 #profile-image {
   float: left;
-  padding-right: 20px;
+  clear: left;
 }
 
 #profile-info {
   padding-top: 20px;
+  margin-left: 320px;
 }

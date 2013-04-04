@@ -1,0 +1,20 @@
+<div class="centre">
+  <div id="profile-image">
+    <img src="/smiley.jpeg" alt="Smiley face">
+  </div>
+  <div id="profile-info">
+      <p>First Name: <%= @user.first_name%></p>
+
+      <p>Last Name: <%= @user.last_name%></p>
+
+      <p>Special skill: <%= @user.special_skill %></p>
+  </div>
+</div>
+
+<form action="<%=/edit-user/@user.id%>" method="post">
+<input type="hidden" name="_method" value="put" />
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname"><br>
+Special skill: <input type="text" name="specialskill">
+<input type="submit" value="Submit">
+</form>

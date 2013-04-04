@@ -1,10 +1,9 @@
 class User
+  include DataMapper::Resource
 
-  attr_reader :first_name, :last_name
-  attr_accessor :special_skill
-
-  def initialize(first_name, last_name)
-    @first_name = first_name
-    @last_name = last_name
-  end
+  property :id,         Serial    # An auto-increment integer key
+  property :first_name,      String    # A varchar type string, for short strings
+  property :last_name,       String      # A text block, for longer string data.
+  property :special_skill,    Text # A text block, for longer string data.
+  property :created_at, DateTime  # A DateTime, for any date you might like.
 end
