@@ -8,5 +8,17 @@
       <p>Last Name: <%= @user.last_name %></p>
 
       <p>Special skill: <%= @user.special_skill %></p>
+
+      Comments:
+
+      <form method="post" action="/user/dummy/comments">
+
+      <textarea name="comments">
+
+      </textarea><br>
+
+      <input type="submit" value="Submit" />
+      </form>
+
   </div>
 </div>
