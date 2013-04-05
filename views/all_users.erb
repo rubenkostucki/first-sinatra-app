@@ -1,0 +1,14 @@
+<%@users.each do |user| %>
+<div class="centre">
+  <div id="profile-image">
+    <img src="/smiley.jpeg" alt="Smiley face">
+  </div>
+  <div id="profile-info">
+      <p>First Name: <%= user.first_name %></p>
+
+      <p>Last Name: <%= user.last_name %></p>
+
+      <p>Special skill: <%= user.special_skill %></p>
+  </div>
+</div>
+<% end %>

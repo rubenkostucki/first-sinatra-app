@@ -11,10 +11,22 @@
   </div>
 </div>
 
-<form action="<%=/edit-user/@user.id%>" method="post">
+<form action="/user-edit/<%=@user.id%>" method="post">
+
 <input type="hidden" name="_method" value="put" />
+
 First name: <input type="text" name="firstname"><br>
+
 Last name: <input type="text" name="lastname"><br>
-Special skill: <input type="text" name="specialskill">
-<input type="submit" value="Submit">
+
+Special skill: <input type="text" name="specialskill"><br><br>
+
+<input type="Update My Profile" value="Submit">
+</form>
+
+<form action="/user-edit/<%=@user.id%>" method="post">
+
+<input type="hidden" name="_method" value="delete" />
+
+<input type="submit" value="Delete My Profile" >
 </form>
